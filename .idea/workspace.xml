@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8e31bcd-c40e-4976-bbf7-45728372dd48" name="Default Changelist" comment="" />
+    <list default="true" id="d19d25af-0a6c-478b-9d19-3471d3e12a0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/LexicalAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LexicalAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/DFA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/DFA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/DFATable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/DFATable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/Token.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +22,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1qgvRfD8DmPPBns3e0B8hBDIkn0" />
+  <component name="ProjectId" id="1qhHBh5dQSsYEoCCLwsAfZiENo2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,16 +35,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LexicalAnalyzer" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.37945205" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -53,16 +67,25 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d8e31bcd-c40e-4976-bbf7-45728372dd48" name="Default Changelist" comment="" />
-      <created>1617514040735</created>
+      <changelist id="d19d25af-0a6c-478b-9d19-3471d3e12a0e" name="Default Changelist" comment="" />
+      <created>1617524767727</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617514040735</updated>
-      <workItem from="1617514053300" duration="560000" />
-      <workItem from="1617519020837" duration="2510000" />
-      <workItem from="1617521557040" duration="142000" />
-      <workItem from="1617521713555" duration="22000" />
-      <workItem from="1617524729042" duration="37000" />
+      <updated>1617524767727</updated>
+      <workItem from="1617524772195" duration="13144000" />
+      <workItem from="1617587106580" duration="35238000" />
+      <workItem from="1617686127289" duration="30670000" />
+      <workItem from="1617863996196" duration="835000" />
+      <workItem from="1617865977878" duration="3605000" />
+      <workItem from="1617869659604" duration="13362000" />
+      <workItem from="1617888772906" duration="2980000" />
+      <workItem from="1617942110072" duration="2059000" />
+      <workItem from="1617955603187" duration="792000" />
+      <workItem from="1617956580170" duration="4075000" />
+      <workItem from="1617962858936" duration="1122000" />
+      <workItem from="1617973228934" duration="21276000" />
+      <workItem from="1618031619937" duration="389000" />
+      <workItem from="1618060160362" duration="17696000" />
     </task>
     <servers />
   </component>
@@ -80,5 +103,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="beforeToken" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
