@@ -1,1 +1,1 @@
-# Java-Lexical-Analyzer
+# Compiler-Term-Project-Lexical-Analyzer
