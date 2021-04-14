@@ -12,7 +12,7 @@ public class LexicalAnalyzer {
 
     public void execute() {
 
-        String getOneLine = "";
+        String getOneLine;
         String input = "";
         try {
             //Read input file
@@ -27,8 +27,6 @@ public class LexicalAnalyzer {
             dfa.run();
 
             br.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
