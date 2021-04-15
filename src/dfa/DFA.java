@@ -3,6 +3,8 @@ package dfa;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -94,7 +96,10 @@ public class DFA {
         token[IDENTIFIER].setKey("IDENTIFIER");
     }
 
-    public void run() {
+    public void run() throws FileNotFoundException {
+
+        PrintWriter pw = new PrintWriter("/Users/junsu/Desktop/output.txt");
+
         for (int i = 0; i < TOKEN_NUM; i++) {
             token[i] = new Token();
             state[i] = new State();
@@ -167,7 +172,7 @@ public class DFA {
                     previousToken = result.getKey();
 
                     if(result.getKey()!="WHITESPACE")
-                        System.out.println("<" + result.getKey() + ", " + result.getValue() + ">");
+                        pw.println("<" + result.getKey() + ", " + result.getValue() + ">");
 
                     //Initialize current state to start state and clear the value of token
                     for (int k = 0; k < TOKEN_NUM; k++) {
@@ -179,17 +184,19 @@ public class DFA {
                 //Check the input is the last input
             } else if (i == inputstr.length() - 1) {
                 if (tokenList.isEmpty()) {
-                    System.out.println("Occured error at " + inputstr.charAt(i));
+                    pw.println("Occured error at " + inputstr.charAt(i));
                     return;
                 } else {
                     Token result = tokenList.get(0);
                     previousToken = result.getKey();
 
                     if(result.getKey()!="WHITESPACE")
-                        System.out.println("<" + result.getKey() + ", " + result.getValue() + ">");
+                        pw.println("<" + result.getKey() + ", " + result.getValue() + ">");
                 }
             }
         }
+
+        pw.close();
     }
 
     /*
