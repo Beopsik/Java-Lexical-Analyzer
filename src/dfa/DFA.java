@@ -183,7 +183,7 @@ public class DFA {
                 //Check the input is the last input
             } else if (i == inputStr.length() - 1) {
                 if (tokenList.isEmpty()) {
-                    pw.println("Occured error at " + inputstr.charAt(i));
+                    pw.println("Occured error at " + inputStr.charAt(i));
                     return;
                 } else {
                     Token result = tokenList.get(0);
