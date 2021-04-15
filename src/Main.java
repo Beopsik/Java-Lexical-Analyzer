@@ -11,7 +11,7 @@ public class Main {
         }*/
 
         //File file = new File("C:\\Users\\문법식\\Desktop\\개인공부\\GitKraken\\compiler-term-project-lexical-analyzer\\LexicalAnalyzer\\src\\Input.java");
-        File file=new File("C:\\Users\\문법식\\Desktop\\개인공부\\GitKraken\\compiler-term-project-lexical-analyzer\\LexicalAnalyzer\\src\\test.txt");
+        File file=new File("C:\\Users\\문법식\\Desktop\\개인공부\\GitKraken\\Java-Lexical-Analyzer\\src\\test.txt");
 
         //Init LexicalAnalyzer
         LexicalAnalyzer lexicalAnalyzer = new LexicalAnalyzer(file);

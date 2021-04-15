@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d19d25af-0a6c-478b-9d19-3471d3e12a0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LexicalAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LexicalAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LexicalAnalyzer/dfa/DFA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LexicalAnalyzer/dfa/DFA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dfa/DFA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/DFA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/DFATable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/DFATable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/Token.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +19,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qhHBh5dQSsYEoCCLwsAfZiENo2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -86,6 +86,11 @@
       <workItem from="1617973228934" duration="21276000" />
       <workItem from="1618031619937" duration="389000" />
       <workItem from="1618060160362" duration="17696000" />
+      <workItem from="1618145092441" duration="177000" />
+      <workItem from="1618308261162" duration="12849000" />
+      <workItem from="1618354673315" duration="126000" />
+      <workItem from="1618378030382" duration="8555000" />
+      <workItem from="1618414059475" duration="85000" />
     </task>
     <servers />
   </component>
