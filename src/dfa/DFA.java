@@ -3,6 +3,7 @@ package dfa;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -97,7 +98,8 @@ public class DFA {
 
     public void run() throws FileNotFoundException {
 
-        PrintWriter pw = new PrintWriter("/Users/junsu/Desktop/output.txt");
+        //for making output text file
+        PrintWriter pw = new PrintWriter("./output.txt");
 
         for (int i = 0; i < TOKEN_NUM; i++) {
             token[i] = new Token();
