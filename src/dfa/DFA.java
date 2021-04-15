@@ -106,7 +106,7 @@ public class DFA {
             //Check all transition tables to see if input is recognizable
             arithmeticOperatorDFA(i);
             assignmentOperatorDFA(i);
-            comparsionOperatorDFA(i);
+            comparisonOperatorDFA(i);
             terminateSymbolDFA(i);
             lParenDFA(i);
             rParenDFA(i);
@@ -165,7 +165,7 @@ public class DFA {
                     Token result = tokenList.get(0);
                     previousToken = result.getKey();
 
-                    if(result.getKey()!="WHITESPACE")
+                    if(!result.getKey().equals("WHITESPACE"))
                         System.out.println("<" + result.getKey() + ", " + result.getValue() + ">");
 
                     //Initialize current state to start state and clear the value of token
@@ -184,7 +184,7 @@ public class DFA {
                     Token result = tokenList.get(0);
                     previousToken = result.getKey();
 
-                    if(result.getKey()!="WHITESPACE")
+                    if(!result.getKey().equals("WHITESPACE"))
                         System.out.println("<" + result.getKey() + ", " + result.getValue() + ">");
                 }
             }
@@ -228,7 +228,7 @@ public class DFA {
         token[ARITHMETICOPERATOR].addValue(ch);
     }
 
-    public void comparsionOperatorDFA(int position) {
+    public void comparisonOperatorDFA(int position) {
         if (!state[COMPARISONOPERATOR].getisRunningState())
             return;
 
@@ -237,7 +237,8 @@ public class DFA {
         JSONObject transition = (JSONObject) comparisonOperatorDFATable.get(state[COMPARISONOPERATOR].getStateLocation());
         try {
             state[COMPARISONOPERATOR].setStateLocation(Integer.parseInt(transition.get(Character.toString(ch)).toString()));
-            if (!state[COMPARISONOPERATOR].getIsFinalState() && (state[COMPARISONOPERATOR].getStateLocation() == 3 || state[COMPARISONOPERATOR].getStateLocation() == 4 || state[COMPARISONOPERATOR].getStateLocation() == 5))
+            if (!state[COMPARISONOPERATOR].getIsFinalState() && (state[COMPARISONOPERATOR].getStateLocation() == 3
+                    || state[COMPARISONOPERATOR].getStateLocation() == 4 || state[COMPARISONOPERATOR].getStateLocation() == 5))
                 state[COMPARISONOPERATOR].setIsFinalState(true);
 
         } catch (NullPointerException e) {
@@ -509,9 +510,11 @@ public class DFA {
 
         //input classification
         String symbolType;
-        if ((ch >= '1' && ch <= '9') && (state[SIGNEDINTEGER].getStateLocation() == 0 || state[SIGNEDINTEGER].getStateLocation() == 2))
+        if ((ch >= '1' && ch <= '9') && (state[SIGNEDINTEGER].getStateLocation() == 0
+                || state[SIGNEDINTEGER].getStateLocation() == 2))
             symbolType = "positive";
-        else if ((ch >= '0' && ch <= '9') && (state[SIGNEDINTEGER].getStateLocation() == 1 || state[SIGNEDINTEGER].getStateLocation() == 3))
+        else if ((ch >= '0' && ch <= '9') && (state[SIGNEDINTEGER].getStateLocation() == 1
+                || state[SIGNEDINTEGER].getStateLocation() == 3))
             symbolType = "digit";
         else if (ch == '-')
             symbolType = "-";
@@ -526,7 +529,8 @@ public class DFA {
         try {
             JSONObject transition = (JSONObject) signedIntegerDFATable.get(state[SIGNEDINTEGER].getStateLocation());
             state[SIGNEDINTEGER].setStateLocation(Integer.parseInt(transition.get(symbolType).toString()));
-            if (!state[SIGNEDINTEGER].getIsFinalState() && (state[SIGNEDINTEGER].getStateLocation() == 1 || state[SIGNEDINTEGER].getStateLocation() == 3 || state[SIGNEDINTEGER].getStateLocation() == 4))
+            if (!state[SIGNEDINTEGER].getIsFinalState() && (state[SIGNEDINTEGER].getStateLocation() == 1
+                    || state[SIGNEDINTEGER].getStateLocation() == 3 || state[SIGNEDINTEGER].getStateLocation() == 4))
                 state[SIGNEDINTEGER].setIsFinalState(true);
         } catch (NullPointerException e) {
             state[SIGNEDINTEGER].setisRunningState(false);
@@ -612,7 +616,9 @@ public class DFA {
         try {
             JSONObject transition = (JSONObject) indentifierDFATable.get(state[IDENTIFIER].getStateLocation());
             state[IDENTIFIER].setStateLocation(Integer.parseInt(transition.get(symbolType).toString()));
-            if (!state[IDENTIFIER].getIsFinalState() && (state[IDENTIFIER].getStateLocation() == 1 || state[IDENTIFIER].getStateLocation() == 2 || state[IDENTIFIER].getStateLocation() == 3 || state[IDENTIFIER].getStateLocation() == 4 || state[IDENTIFIER].getStateLocation() == 5))
+            if (!state[IDENTIFIER].getIsFinalState() && (state[IDENTIFIER].getStateLocation() == 1
+                    || state[IDENTIFIER].getStateLocation() == 2 || state[IDENTIFIER].getStateLocation() == 3
+                    || state[IDENTIFIER].getStateLocation() == 4 || state[IDENTIFIER].getStateLocation() == 5))
                 state[IDENTIFIER].setIsFinalState(true);
         } catch (NullPointerException e) {
             state[IDENTIFIER].setisRunningState(false);
